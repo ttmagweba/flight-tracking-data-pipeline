@@ -21,12 +21,7 @@ The goal of this project was to design an end-to-end ETL pipeline that demonstra
 ---
 
 ## Project Architecture
-
-See:
-
-```text
-docs/architecture.md
-```
+![](docs/screenshots/architecture.png)
 
 ---
 
