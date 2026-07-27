@@ -3,34 +3,35 @@
 ## High-Level Architecture
 
 ```text
-                +------------------+
-                | Airplanes.live   |
-                | REST API         |
-                +--------+---------+
-                         |
-                         v
-                     Extract
-                         |
-                         v
-                 Source Data CSV
-                         |
-                         v
-                    Transform
-                         |
-                         v
-               Transformed Data CSV
-                         |
-                         v
-                       Load
-                         |
-                         v
-              Normalized SQLite DB
-                         |
-                         v
-                 Analytical Query
-                         |
-                         v
-                  Results Output
+
+             Airplanes Live API
+                     │
+                     ▼
+             Extract Raw Data
+                     │
+                     ▼
+            Source CSV File
+                     │
+                     ▼
+          Data Cleaning & Validation
+                     │
+                     ▼
+      Distance Calculation (Haversine)
+                     │
+                     ▼
+         Transformed CSV Dataset
+                     │
+                     ▼
+          Load into SQLite Database
+                     │
+                     ▼
+      Normalize into Relational Tables
+                     │
+                     ▼
+             SQL Analytical Query
+                     │
+                     ▼
+           Results Exported to CSV
 ```
 
 ## Components
