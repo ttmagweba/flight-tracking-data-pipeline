@@ -72,13 +72,14 @@ docs/orchestration.md
 
 ### Database Tables
 
-See:
+![](docs/screenshots/database_normalized_flights.png)
+
+For Other Tables See:
 
 ```text
 docs/screenshots/database_tables.png
 docs/screenshots/database_aicraft.png
 docs/screenshots/database_model.png
-docs/screenshots/database_normalized_flights.png
 ```
 
 ### Query Results
