@@ -1,9 +1,8 @@
 # Flight Tracking Data Pipeline
 
 ## Overview
-Built an end-to-end batch ETL pipeline that ingests live aircraft tracking data from a REST API, enriches records using geospatial calculations, stores data in a normalized relational database, and automatically generates daily analytical CSV reports through Apache Airflow orchestration.
 
-The pipeline retrieves live aircraft data around Johannesburg, enriches each record by calculating its distance from a predefined location using the Haversine formula, and stores the data in a normalized SQLite database for SQL-based analysis.
+This project is an end-to-end batch ETL pipeline that retrieves live aircraft tracking data around Johannesburg from the Airplanes Live REST API, enriches each record by calculating its distance from a predefined location using the Haversine formula, stores the processed data in a normalized SQLite database, and automatically generates daily analytical CSV reports through Apache Airflow orchestration.
 
 ## Project Objective
 
@@ -94,14 +93,13 @@ For Other Tables See:
 
 ```text
 docs/screenshots/database_tables.png
-docs/screenshots/database_aicraft.png
+docs/screenshots/database_aircraft.png
 docs/screenshots/database_model.png
 ```
 
 ### Query Results
 
 ![](docs/screenshots/query_results.png)
-See:
 
 ### Log file
 
@@ -141,7 +139,7 @@ flight-tracking-data-pipeline/
 │   ├── architecture.md
 │   ├── database_design.md
 │   ├── orchestration.md
-│   ├── work_flow.md
+│   ├── workflow.md
 │   └── screenshots/
 │
 ├── logs/
