@@ -104,7 +104,7 @@ docs/screenshots/log_output.png
 
 ---
 
-## Key Data Engineering Concepts Demonstrated
+## Features
 
 - REST API Integration
 - Batch ETL Processing
