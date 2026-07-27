@@ -87,13 +87,12 @@ flight-tracking-data-pipeline/
 │   ├── architecture.md
 │   ├── database_design.md
 │   ├── orchestration.md
-│   ├── data_flow.md
+│   ├── work_flow.md
 │   └── screenshots/
 │
 ├── README.md
 ├── requirements.txt
-├── .gitignore
-└── LICENSE
+└── .gitignore
 ```
 
 ---
