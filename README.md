@@ -64,21 +64,11 @@ docs/orchestration.md
 ## Screenshots
 
 ### Airflow DAG
-
-See:
-
-```text
-docs/screenshots/dag_graph.png
-```
+![](docs/screenshots/dag_graph.png)
 
 ### Successful DAG Run
 
-See:
-
-```text
-docs/screenshots/successful_run.png
-```
-
+![](docs/screenshots/successful_run.png)
 
 ### Database Tables
 
@@ -93,19 +83,12 @@ docs/screenshots/database_normalized_flights.png
 
 ### Query Results
 
+![](docs/screenshots/query_results.png)
 See:
-
-```text
-docs/screenshots/query_results.png
-```
 
 ### Log file
 
-See:
-
-```text
-docs/screenshots/log_output.png
-```
+![](docs/screenshots/log_output.png)
 
 ---
 
@@ -181,6 +164,7 @@ airflow standalone
 
 From the Airflow UI, trigger the `Flights_Tracking` DAG.
 
+---
 
 ## Future Enhancements
 
