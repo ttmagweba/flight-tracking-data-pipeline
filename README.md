@@ -60,3 +60,22 @@ The Airflow DAG executes daily at 20:00.
 
 ```text
 0 20 * * *
+```
+
+## Database Design
+The database contains tables:
+
+- Model
+- Aircraft
+- Normalized Flights
+
+Refer to the ERD diagram in the docs folder.
+
+## Key Data Engineering Concepts
+- ETL Pipelines
+- Workflow Orchestration
+- Database Normalization
+- Geospatial Data Processing
+- Error Handling
+- Logging
+- Automated Reporting
