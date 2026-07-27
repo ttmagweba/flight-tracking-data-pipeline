@@ -101,10 +101,3 @@ Stores individual flight observations.
 - model_id (Foreign Key)
 
 ---
-
-## Benefits of Normalization
-
-- Reduces data duplication
-- Improves consistency
-- Simplifies maintenance
-- Supports efficient querying
