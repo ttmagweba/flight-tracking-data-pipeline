@@ -1,19 +1,11 @@
 # Flight Tracking Data Pipeline
 
-## Project Summary
+## Overview
+This project automates the collection and processing of live aircraft tracking data.
+ 
+The pipeline extracts flight information from the Airplanes Live API, performs data cleaning and enrichment, loads the results into a normalized database, and generates a daily analytical report.
 
-This project demonstrates an end-to-end ETL pipeline that extracts live aircraft tracking data from a REST API, transforms and enriches the data, loads it into a normalized relational database, and generates automated daily reports.
-
-Apache Airflow is used to orchestrate and schedule the workflow. The project demonstrates several foundational data engineering concepts including API ingestion, data transformation, geospatial calculations, database normalization, workflow automation, logging, and error handling.
-
----
-
-## Business Objective
-
-The objective of this project is to automate the collection and processing of flight activity data within a defined geographical area.
-
-The pipeline retrieves aircraft information, enriches the dataset with calculated distances from a central location, stores the results in a normalized database structure, and generates daily reports on selected commercial aircraft operating near the configured location.
-
+The workflow is orchestrated using Apache Airflow and runs automatically every day at 20:00.
 ---
 
 ## Technology Stack
