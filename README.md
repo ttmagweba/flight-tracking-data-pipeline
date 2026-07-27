@@ -1,12 +1,18 @@
 # Flight Tracking Data Pipeline
 
-## Overview
+## Project Summary
 
-This project automates the collection and processing of live aircraft tracking data.
+This project demonstrates an end-to-end ETL pipeline that extracts live aircraft tracking data from a REST API, transforms and enriches the data, loads it into a normalized relational database, and generates automated daily reports.
 
-The pipeline extracts flight information from the Airplanes Live API, performs data cleaning and enrichment, loads the results into a normalized database, and generates a daily analytical report.
+Apache Airflow is used to orchestrate and schedule the workflow. The project demonstrates several foundational data engineering concepts including API ingestion, data transformation, geospatial calculations, database normalization, workflow automation, logging, and error handling.
 
-The workflow is orchestrated using Apache Airflow and runs automatically every day at 20:00.
+---
+
+## Business Objective
+
+The objective of this project is to automate the collection and processing of flight activity data within a defined geographical area.
+
+The pipeline retrieves aircraft information, enriches the dataset with calculated distances from a central location, stores the results in a normalized database structure, and generates daily reports on selected commercial aircraft operating near the configured location.
 
 ---
 
@@ -21,61 +27,98 @@ The workflow is orchestrated using Apache Airflow and runs automatically every d
 
 ---
 
-## Pipeline Architecture
+## Project Architecture
 
-Extract → Transform → Load → Query
-
----
-
-## Features
-
-- REST API data extraction
-- Data quality handling
-- Geospatial distance calculations
-- Database normalization
-- Scheduled batch processing
-- Logging and monitoring
-- Automated reporting
-
----
-
-## Project Workflow
-
-1. Extract flight data from API.
-2. Save raw source data.
-3. Select required attributes.
-4. Remove records with missing data.
-5. Calculate distance from centre point.
-6. Load data into database.
-7. Normalize database tables.
-8. Execute analytical query.
-9. Append results to output file.
-10. Log all processing events.
-
----
-
-## Schedule
-
-The Airflow DAG executes daily at 20:00.
+See:
 
 ```text
-0 20 * * *
+docs/architecture.md
 ```
 
+---
+
+## Data Flow
+
+See:
+
+```text
+docs/data_flow.md
+```
+
+---
+
 ## Database Design
-The database contains tables:
 
-- Model
-- Aircraft
-- Normalized Flights
+See:
 
-Refer to the ERD diagram in the docs folder.
+```text
+docs/database_design.md
+```
 
-## Key Data Engineering Concepts
-- ETL Pipelines
-- Workflow Orchestration
-- Database Normalization
+---
+
+## Workflow Orchestration
+
+See:
+
+```text
+docs/orchestration.md
+```
+
+---
+
+## Key Data Engineering Concepts Demonstrated
+
+- REST API Integration
+- Batch ETL Processing
+- Data Cleaning
+- Data Transformation
 - Geospatial Data Processing
+- Relational Database Design
+- Database Normalization
+- Data Modeling
+- Apache Airflow Orchestration
+- Logging and Monitoring
 - Error Handling
-- Logging
 - Automated Reporting
+
+---
+
+## Repository Structure
+
+```text
+flight-tracking-data-pipeline/
+│
+├── dags/
+│   └── flights_tracking.py
+│
+├── docs/
+│   ├── architecture.md
+│   ├── database_design.md
+│   ├── orchestration.md
+│   ├── data_flow.md
+│   └── screenshots/
+│
+├── README.md
+├── requirements.txt
+├── .gitignore
+└── LICENSE
+```
+
+---
+
+## Future Enhancements
+
+- PostgreSQL Migration
+- Docker Containerization
+- Cloud Deployment
+- Data Quality Validation
+- Dashboard Visualizations
+- CI/CD Implementation
+- Data Warehouse Integration
+
+---
+
+## Author
+
+Thabani Magweba
