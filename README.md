@@ -6,6 +6,7 @@ This project automates the collection and processing of live aircraft tracking d
 The pipeline extracts flight information from the Airplanes Live API, performs data cleaning and enrichment, loads the results into a normalized database, and generates a daily analytical report.
 
 The workflow is orchestrated using Apache Airflow and runs automatically every day at 20:00.
+
 ---
 
 ## Technology Stack
