@@ -28,12 +28,12 @@ docs/architecture.md
 
 ---
 
-## Data Flow
+## Work Flow
 
 See:
 
 ```text
-docs/data_flow.md
+docs/work_flow.md
 ```
 
 ---
