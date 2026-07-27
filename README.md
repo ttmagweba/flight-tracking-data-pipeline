@@ -3,6 +3,8 @@
 ## Overview
 Built an end-to-end batch ETL pipeline that ingests live aircraft tracking data from a REST API, enriches records using geospatial calculations, stores data in a normalized relational database, and automatically generates daily analytical CSV reports through Apache Airflow orchestration.
 
+The pipeline retrieves live aircraft data around Johannesburg, enriches each record by calculating its distance from a predefined location using the Haversine formula, and stores the data in a normalized SQLite database for SQL-based analysis.
+
 ## Project Objective
 
 The goal of this project was to design an end-to-end ETL pipeline that demonstrates industry-standard data engineering practices including automated workflow orchestration, relational data modeling, error handling, and analytical reporting using live aircraft data.
@@ -31,7 +33,7 @@ docs/architecture.md
 
 ---
 
-## Work Flow
+## Workflow
 
 See:
 
@@ -109,18 +111,18 @@ docs/screenshots/log_output.png
 
 ## Features
 
-• ETL Pipeline
-• Apache Airflow
-• REST API Integration
-• Data Cleaning
-• Feature Engineering
-• Geospatial Processing
-• Relational Database Design
-• Database Normalization
-• SQL Analytics
-• Logging
-• Error Handling
-• Automated Reporting
+- ETL Pipeline
+- Apache Airflow
+- REST API Integration
+- Data Cleaning
+- Feature Engineering
+- Geospatial Processing
+- Relational Database Design
+- Database Normalization
+- SQL Analytics
+- Logging
+- Error Handling
+- Automated Reporting
 
 ---
 
@@ -154,6 +156,31 @@ flight-tracking-data-pipeline/
 ```
 
 ---
+## Getting Started
+
+### Clone the repository
+
+```bash
+git clone https://github.com/<username>/flight-tracking-data-pipeline.git
+cd flight-tracking-data-pipeline
+```
+
+### Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Start Apache Airflow
+
+```bash
+airflow standalone
+```
+
+### Trigger the DAG
+
+From the Airflow UI, trigger the `Flights_Tracking` DAG.
+
 
 ## Future Enhancements
 
