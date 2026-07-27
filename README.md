@@ -56,6 +56,24 @@ See:
 docs/orchestration.md
 ```
 
+## Screenshots
+
+### Airflow DAG
+
+docs/screenshots/dag_graph.png
+
+### Successful DAG Run
+
+docs/screenshots/successful_run.png
+
+### Database Tables
+
+docs/screenshots/database_tables.png
+
+### Query Results
+
+docs/screenshots/query_results.png
+
 ---
 
 ## Key Data Engineering Concepts Demonstrated
