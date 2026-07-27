@@ -83,6 +83,9 @@ flight-tracking-data-pipeline/
 ├── dags/
 │   └── flights_tracking.py
 │
+├── database/
+│   └── flights_tracking.db
+│
 ├── docs/
 │   ├── architecture.md
 │   ├── database_design.md
@@ -90,9 +93,15 @@ flight-tracking-data-pipeline/
 │   ├── work_flow.md
 │   └── screenshots/
 │
+├── logs/
+│   └── log_file.txt
+│
+├── queryoutput/
+│   └── results.csv
+│
+├── .gitignore
 ├── README.md
-├── requirements.txt
-└── .gitignore
+└── requirements.txt
 ```
 
 ---
