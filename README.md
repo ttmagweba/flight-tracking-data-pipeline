@@ -38,7 +38,7 @@ docs/architecture.md
 See:
 
 ```text
-docs/work_flow.md
+docs/workflow.md
 ```
 
 ---
