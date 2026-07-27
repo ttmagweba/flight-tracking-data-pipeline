@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+
+*.db
+
+*.csv
+
+logs/
+
+.env
+
+airflow.db
+
+webserver_config.py
