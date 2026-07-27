@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is an end-to-end batch ETL pipeline that retrieves live aircraft tracking data around Johannesburg from the Airplanes Live REST API, enriches each record by calculating its distance from a predefined location using the Haversine formula, stores the processed data in a normalized SQLite database, and automatically generates daily analytical CSV reports through Apache Airflow orchestration.
+This project is an end-to-end batch ETL pipeline that retrieves live aircraft tracking data around Johannesburg from the Airplanes Live REST API, enriches each record by calculating the aircraft's distance from a predefined location using the Haversine formula, stores the processed data in a normalized SQLite database, and automatically generates daily analytical CSV reports through Apache Airflow orchestration.
 
 ## Project Objective
 
