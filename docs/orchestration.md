@@ -59,5 +59,3 @@ Loading Completed
 Running Query
 Writing Completed
 ```
-
-The log assists with monitoring and troubleshooting.
