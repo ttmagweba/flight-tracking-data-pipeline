@@ -1,7 +1,11 @@
 # Flight Tracking Data Pipeline
 
 ## Overview
-Built an end-to-end batch ETL pipeline that ingests live aircraft tracking data from a REST API, enriches records using geospatial calculations, stores data in a normalized relational database, and automatically generates daily analytical reports through Apache Airflow orchestration.
+Built an end-to-end batch ETL pipeline that ingests live aircraft tracking data from a REST API, enriches records using geospatial calculations, stores data in a normalized relational database, and automatically generates daily analytical CSV reports through Apache Airflow orchestration.
+
+## Project Objective
+
+The goal of this project was to design an end-to-end ETL pipeline that demonstrates industry-standard data engineering practices including automated workflow orchestration, relational data modeling, error handling, and analytical reporting using live aircraft data.
 
 ---
 
@@ -104,18 +108,18 @@ docs/screenshots/log_output.png
 
 ## Features
 
-- REST API Integration
-- Batch ETL Processing
-- Data Cleaning
-- Data Transformation
-- Geospatial Data Processing
-- Relational Database Design
-- Database Normalization
-- Data Modeling
-- Apache Airflow Orchestration
-- Logging and Monitoring
-- Error Handling
-- Automated Reporting
+• ETL Pipeline
+• Apache Airflow
+• REST API Integration
+• Data Cleaning
+• Feature Engineering
+• Geospatial Processing
+• Relational Database Design
+• Database Normalization
+• SQL Analytics
+• Logging
+• Error Handling
+• Automated Reporting
 
 ---
 
