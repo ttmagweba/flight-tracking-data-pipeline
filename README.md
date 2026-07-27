@@ -13,14 +13,29 @@ The goal of this project was to design an end-to-end ETL pipeline that demonstra
 
 ## Technology Stack
 
-- Python
-- Pandas
-- NumPy
-- Requests
-- SQLite
-- Apache Airflow
+| Technology | Purpose |
+|------------|---------|
+| Python | Core programming language used to develop the ETL pipeline |
+| Apache Airflow | Workflow orchestration, scheduling, and task dependency management |
+| Requests | REST API communication for retrieving live aircraft data |
+| Pandas | Data extraction, cleaning, transformation, and CSV processing |
+| NumPy | Vectorized geospatial distance calculations using the Haversine formula |
+| SQLite | Relational database used for data storage and normalization |
 
 ---
+## Key Design Decisions
+
+| Decision | Rationale |
+|----------|-----------|
+| Apache Airflow | Selected to automate pipeline scheduling, task orchestration, retries, and dependency management. |
+| SQLite | Chosen as a lightweight relational database suitable for a self-contained portfolio project without requiring a database server. |
+| Normalized Database Schema | Separated aircraft, model, and flight data into related tables to reduce redundancy and improve data integrity. |
+| Haversine Formula | Used to accurately calculate the distance between each aircraft and a fixed reference point (Johannesburg). |
+| Batch Processing | Implemented a scheduled batch ETL workflow to simulate a common production data engineering pattern. |
+| CSV Report Output | Generated analytical reports as CSV files to provide a portable and easily consumable output format. |
+
+---
+
 
 ## Project Architecture
 ![](docs/screenshots/architecture.png)
