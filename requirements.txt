@@ -1,0 +1,8 @@
+apache-airflow
+pandas
+numpy
+requests
+json
+sqlite3
+datetime
+pathlib
