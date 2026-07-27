@@ -60,19 +60,47 @@ docs/orchestration.md
 
 ### Airflow DAG
 
+See:
+
+```text
 docs/screenshots/dag_graph.png
+```
 
 ### Successful DAG Run
 
+See:
+
+```text
 docs/screenshots/successful_run.png
+```
+
 
 ### Database Tables
 
+See:
+
+```text
 docs/screenshots/database_tables.png
+docs/screenshots/database_aicraft.png
+docs/screenshots/database_model.png
+docs/screenshots/database_normalized_flights.png
+```
 
 ### Query Results
 
+See:
+
+```text
 docs/screenshots/query_results.png
+```
+
+### Log file
+
+See:
+
+```text
+docs/screenshots/log_output.png
+```
 
 ---
 
