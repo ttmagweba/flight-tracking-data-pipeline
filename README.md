@@ -158,7 +158,7 @@ flight-tracking-data-pipeline/
 ### Clone the repository
 
 ```bash
-git clone https://github.com/<username>/flight-tracking-data-pipeline.git
+git clone https://github.com/ttmagweba/flight-tracking-data-pipeline.git
 cd flight-tracking-data-pipeline
 ```
 
