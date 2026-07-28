@@ -113,7 +113,6 @@ docs/screenshots/database_model.png
 - Apache Airflow
 - REST API Integration
 - Data Cleaning
-- Feature Engineering
 - Geospatial Processing
 - Relational Database Design
 - Database Normalization
