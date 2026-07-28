@@ -168,6 +168,34 @@ cd flight-tracking-data-pipeline
 pip install -r requirements.txt
 ```
 
+### Setup
+
+Before running the pipeline, create a working directory that will store source data, transformed data, logs, results, and the SQLite database.
+
+Example structure:
+
+```text
+Project/
+│
+├── source_data.csv
+├── transformed_data.csv
+├── results.csv
+├── log_file.txt
+└── flights_tracking.db
+```
+
+The file paths used in the Python script should be updated to match the location of your project directory.
+
+For example:
+
+```python
+log_file = '/path/to/project/log_file.txt'
+```
+
+Update all file paths in the script to match your local environment before execution.
+
+Copy DAG to respective airflow dags folder.
+
 ### Start Apache Airflow
 
 ```bash
