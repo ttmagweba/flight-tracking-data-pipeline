@@ -194,6 +194,10 @@ log_file = '/path/to/project/log_file.txt'
 
 Update all file paths in the script to match your local environment before execution.
 
+### Configure Airflow
+
+Ensure Apache Airflow is installed and configured in your environment.
+
 Copy DAG to respective airflow dags folder.
 
 ### Start Apache Airflow
